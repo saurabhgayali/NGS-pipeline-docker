@@ -1,0 +1,46 @@
+# Docker build context exclusions
+.git
+.gitignore
+.gitattributes
+.github
+.env
+.env.local
+*.md
+*.txt
+!requirements.txt
+
+# Build artifacts
+*.pyc
+__pycache__
+*.so
+*.egg-info
+build/
+dist/
+*.egg
+
+# IDE and editor files
+.vscode
+.idea
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+.swp
+.swo
+*~
+
+# Data directories (large files)
+data/input_queue
+data/raw_reads
+data/projects
+results
+logs
+.tmp
+
+# Testing
+.pytest_cache
+.coverage
+htmlcov
+
+# OS files
+.DS_Store
+Thumbs.db
